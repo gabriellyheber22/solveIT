@@ -1,0 +1,225 @@
+/*Configuração do Cabeçalho*/
+.cabecalho {
+    background-color: var(--azul-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-sizing: content-box;
+    padding: 0 1em;
+
+
+}
+
+/*Inicio --> Configuração do Menu Hamburguer*/
+.containerHamburguer {
+    display: flex;
+    align-items: center;
+
+
+}
+
+/*Configuração do icone de hamburguer*/
+.containerHamburguer__icone {
+    height: 24px;
+    width: 24px;
+    background-image: url(../icones/MenuHamburguer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    padding: 0.5em;
+
+}
+
+.containerHamburguer__botao:checked~.containerHamburguer__rotulo>.containerHamburguer__icone {
+    background-image: url(../icones/MenuHamburguerAberto.svg);
+
+    border: 1px solid var(--fonte-branca);
+    border-radius: 50%;
+    background-color: var(--fonte-branca);
+    padding: 0.5em;
+
+}
+
+/*Configuração do Menu Suspenso e submenu -- Aparecer e desaparecer ao acionalo*/
+.containerHamburguer__botao,
+.submenuSolucoes,
+.containerHamburguer__listaMenu,
+.containerHamburguer__itemSolucoes {
+    display: none;
+}
+
+.containerHamburguer__listaMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+
+}
+
+.submenuSolucoes:checked~.containerHamburguer__itemSolucoes,
+.containerHamburguer__botao:checked~.containerHamburguer__listaMenu {
+    display: block;
+}
+
+.containerHamburguer__botao:checked~.containerHamburguer__listaMenu {
+    background-color: var(--azul-principal);
+    text-align: center;
+}
+
+.submenuSolucoes:checked~.containerHamburguer__itemSolucoes {
+    background-color: var(--azul-submenu);
+}
+
+/*Configuração dos Itens da lista do Menu*/
+
+.containerHamburguer__itemLink,
+.containerHamburguer__item {
+    text-decoration: none;
+    color: var(--fonte-branca);
+    padding: 1em;
+
+}
+
+/*Configuração da seta do submenu*/
+.submenu__icone {
+    background-image: url(../icones/SetaParaCima.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position: right center;
+    /* Ícone à direita e centralizado verticalmente */
+    padding-right: 20px;
+    /* Espaçamento à direita do texto para acomodar o ícone */
+    background-size: 15px 15px;
+    /* Define o tamanho do ícone (ajuste conforme necessário) */
+    display: inline-block;
+    /* Para alinhar o texto e o ícone corretamente */
+    line-height: 1.5;
+    /* Para ajustar a altura do ícone em relação ao texto */
+}
+
+.submenuSolucoes:checked~.submenuSolucoes__rotulo>.submenu__icone {
+    background-image: url(../icones/SetaParaBaixo.svg);
+}
+
+/* Configuração da Logo*/
+.logoCabecalho {
+    padding: 0.5em;
+}
+
+.parallax {
+    background-image: url('../imagens/PlanoDeFundo-svg.svg');
+    /* Outros atributos */
+    background-attachment: fixed;
+    /* Mantém o fundo fixo enquanto o conteúdo rola */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containerTelasMaiores,
+.cabecalho__logoTelasMaiores {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    /*Ocultando o menu Hamburguer e efeito paralax*/
+
+    .containerHamburguer,
+    .logoCabecalho {
+        display: none;
+    }
+
+    .parallax {
+        background-image: url(../imagens/EfeitoDeFundoHome.svg);
+    }
+
+    /*Estilização do Menu de telas Maiores*/
+    .cabecalho__logoTelasMaiores {
+        display: block;
+
+    }
+
+    .containerTelasMaiores {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .containerTelasMaiores__listaMenu {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 1em;
+    }
+
+    .containerTelasMaiores__listaLink {
+        color: var(--fonte-branca);
+        text-decoration: none;
+        padding: 1em 1em;
+    }
+
+    /*Criação do Menu Dropdown*/
+    .containerTelasMaiores__itemSolucoes {
+        display: none;
+        background-color: var(--branco-secundario);
+        position: absolute;
+        top: 65%;
+        left: 8;
+        text-align: center;
+        width: 240px;
+        border-radius: 3px;
+        z-index: 3;
+
+
+    }
+
+    .containerTelasMaiores__itemSolucoes.show {
+        display: block;
+
+    }
+
+    .li-dropdown {
+        background-image: url(../icones/SetaParaCima.svg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-right: 20px;
+        /* Espaçamento à direita do texto para acomodar o ícone */
+        /* Define o tamanho do ícone (ajuste conforme necessário) */
+        display: inline-block;
+        /* Para alinhar o texto e o ícone corretamente */
+    }
+
+    .containerTelasMaiores__listaLink:hover {
+        font-weight: bold;
+        text-decoration: overline;
+
+    }
+
+    .containerTelasMaiores__itemDropdown {
+        padding: 1em;
+    }
+
+    .containerTelasMaiores__linkDropdown {
+        text-decoration: none;
+        color: var(--azul-principal);
+        font-weight: bold;
+    }
+
+    .containerTelasMaiores__itemDropdown:hover {
+        background-color: var(--azul-principal);
+        border: 1px solid var(--branco-secundario);
+        border-radius: 5px;
+    }
+
+    .containerTelasMaiores__itemDropdown:hover .containerTelasMaiores__linkDropdown {
+        color: var(--fonte-branca);
+    }
+
+
+
+   
+
+}

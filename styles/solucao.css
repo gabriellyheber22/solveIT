@@ -1,0 +1,130 @@
+.solucoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:3em 0;
+   align-items: center;
+    background-color: var(--branco-secundario);
+    padding: 2em 1em ;
+    
+    
+}
+.solucoes__cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:3em 0;
+    text-align: center;
+    background-color: var(--branco-secundario);
+    width: 300px;
+    padding: 2em 1em ;
+}
+.solucoes__titulo, .solucoes__subtitulo{
+    color: var(--azul-principal);
+    font-weight: bold;
+    
+}
+.solucoes__titulo{
+    font-size: 1.2em ;
+    text-align: center;
+    padding-top: 1.5em;
+   
+    
+}
+.solucoes__subtitulo{
+    font-size: 1.2em;
+    padding: 1em 0;
+
+}
+.solucoes__texto{
+    color: var(--azul-principal);
+    font-weight:300;
+    padding: 1em;
+    margin-bottom: 1.5em;
+}
+.solucoes__botao{
+    text-decoration: none;
+    background-color: var(--azul-principal);
+    color: var(--fonte-branca);
+    font-weight: normal ;
+    padding: 0.5em 5em;
+    border-radius: 30px;
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .solucoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+
+    }
+    .solucoes__cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+       width: 90%;
+        gap: 0 1em;
+        box-sizing: border-box;
+        
+    }
+    .card{
+        
+        background-color: var(--azul-principal);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+       padding: 1em;
+        width: 400px;
+        height: 500px;
+        border-radius: 15px;
+        
+    }
+    .solucoes__imagem{
+        width: 221px;
+        
+    }
+     .solucoes__subtitulo, .solucoes__texto, .solucoes__imagem{
+        color: var(--fonte-branca);
+        padding: 0;
+    }
+    .solucoes__botao{
+        color: var(--azul-principal);
+        background-color: var(--branco-secundario);
+    }
+    .solucoes__containerTexto{
+        height: 150px;
+        
+    }
+}
+@media screen and (min-width: 1728px) {
+    .card{     
+        width: 400px;
+        height: 800px;
+        
+    }
+    .solucoes__imagem{
+        width: 350px;
+    }
+    .solucoes__subtitulo{
+        font-size: 1.8em;
+
+    } 
+    .solucoes__texto{
+        font-size: 1.5em;
+        padding: 0 1em;
+        
+
+    }
+    .solucoes__botao{
+        font-weight: normal ;
+        padding: 1em 9em;
+        border-radius: 30px;
+        
+    }
+
+}

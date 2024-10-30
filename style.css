@@ -1,0 +1,33 @@
+@import url("./styles/header.css");/*Forma de importar outro arquivo Css no index*/
+@import url("./styles/home.css");
+@import url("./styles/solucao.css");
+@import url("./styles/about.css");
+@import url("./styles/orcamento.css");
+@import url("./styles/rodape.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/*Declaração de Cores*/
+:root{
+    --azul-principal: #092B40;
+    --azul-submenu: #103348;
+    --azul-claro-menu: #1677B2;
+    --azul-claro: #8EECF2;
+    --branco-secundario:#f2f2f2;
+    --branco-transparente: #f2f2f2cb;
+    --fonte-branca:  #ffffff;
+    --fonte-padrao: "Inter", sans-serif;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    font-size: 1rem;
+    font-weight: 400;
+
+    
+}

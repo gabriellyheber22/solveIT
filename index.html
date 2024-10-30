@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolveIt</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="cabecalho parallax">
+        <img class="logoCabecalho" src="./icones/LogoSolveIT.svg" alt="Logo SolveIT">
+        <div class="containerHamburguer">
+
+            <input type="checkbox" id="menu" class="containerHamburguer__botao">
+            <label for="menu" class="containerHamburguer__rotulo">
+                <span class="containerHamburguer__icone"></span>
+            </label>
+            <ul class="containerHamburguer__listaMenu">
+                <li class="containerHamburguer__item"> <a href="#" class="containerHamburguer__itemLink">Sobre Nós</a>
+                </li>
+
+                <input type="checkbox" id="submenu" class="submenuSolucoes">
+                <label for="submenu" class="submenuSolucoes__rotulo">
+                    <li class="containerHamburguer__item submenu__icone">Soluções </li>
+
+                </label>
+                <ul class="containerHamburguer__itemSolucoes">
+                    <li class="containerHamburguer__item"><a href="#" class="containerHamburguer__itemLink">Criação de
+                            Sites</a></li>
+                    <li class="containerHamburguer__item"><a href="#" class="containerHamburguer__itemLink">Hardware e
+                            Software</a></li>
+                    <li class="containerHamburguer__item"> <a href="#" class="containerHamburguer__itemLink">Automação e
+                            IOT</a></li>
+                </ul>
+                <li class="containerHamburguer__item"><a href="#" class="containerHamburguer__itemLink">Orçamento</a>
+                </li>
+                <li class="containerHamburguer__item"><a href="#" class="containerHamburguer__itemLink">Contato</a></li>
+
+            </ul>
+        </div>
+        <img class="cabecalho__logoTelasMaiores" src="./icones/Logo com escrita sem fundo - branco 2.svg"
+            alt="Logo SolveIt">
+        <div class="containerTelasMaiores">
+            <ul class="containerTelasMaiores__listaMenu">
+                <li class="containerTelasMaiores__listaItem"><a href="#" class="containerTelasMaiores__listaLink">Sobre
+                        Nós</a></li>
+                <li class="containerTelasMaiores__listaItem li-dropdown"><a href="#"
+                        class="containerTelasMaiores__listaLink dropdown">Soluções</a>
+
+                    <ul class="containerTelasMaiores__itemSolucoes">
+                        <li class="containerTelasMaiores__itemDropdown"><a href="#"
+                                class="containerTelasMaiores__linkDropdown">Criação de Sites</a></li>
+                        <li class="containerTelasMaiores__itemDropdown"><a href="#"
+                                class="containerTelasMaiores__linkDropdown">Hardware e Software</a></li>
+                        <li class="containerTelasMaiores__itemDropdown"><a href="#"
+                                class="containerTelasMaiores__linkDropdown">Automação e IOT</a></li>
+                    </ul>
+
+                </li>
+                <li class="containerTelasMaiores__listaItem"><a href="#"
+                        class="containerTelasMaiores__listaLink">Orçamento</a></li>
+                <li class="containerTelasMaiores__listaItem"><a href="#"
+                        class="containerTelasMaiores__listaLink">Contato</a></li>
+            </ul>
+        </div>
+
+
+    </header>
+    <section class="home parallax">
+        <div class="home__texto">
+            <h1 class="home__titulo">Toda inovação que você precisa nós resolvemos aqui.</h1>
+            <h2 class="home__subtitulo">SolveIT: O Destino Único para revolucionar o seu negócio.</h2>
+        </div>
+        <div class="home__imagem">
+
+            <img src="./imagens/homemComputador.svg"
+                srcset="./imagens/homemComputador.svg 460w, ./imagens/homemComputadorTelasGrandes.svg 1131w"
+                sizes="(max-width: 1023px) 0px, (max-width: 1727px) 460px, (min-width: 1728px) 1131px"
+                alt="Homem mexendo em Notebook">
+
+            <!--<img loading="lazy" src="./imagens/homemComputador.svg"  alt="Homem mexendo em notebook">-->
+
+        </div>
+
+    </section>
+    <section class="solucoes">
+        <h2 class="solucoes__titulo">Nossas soluções para a sua empresa</h2>
+        <div class="solucoes__cards">
+            <div class="solucoes__criacaoDeSites card">
+                <img class="solucoes__imagem" src="./imagens/CriacaoSite.svg" alt="Prototipo de Criação de Sites">
+                <h3 class="solucoes__subtitulo">Criação de Sites</h3>
+                <div class="solucoes__containerTexto">
+                    <p class="solucoes__texto">Oferecemos serviços completos de criação, desenvolvimento, manutenção,
+                        atualização e otimização de sites, proporcionando páginas web robustas e impactantes que
+                        fortalecem sua
+                        presença online.</p>
+                </div>
+                <a href="#" class="solucoes__botao">Saiba Mais</a>
+            </div>
+            <div class="solucoes__hardwareSoftware card">
+                <img class="solucoes__imagem" src="./imagens/HardwareSoftware.svg"
+                    alt="Serviços voltado a Hardware e Software">
+                <h3 class="solucoes__subtitulo">Hardware e Software</h3>
+                <div class="solucoes__containerTexto">
+                    <p class="solucoes__texto">Serviços de montagem, manutenção, upgrade, consultoria, suporte técnico e
+                        otimização de sistemas.</p>
+                </div>
+                <a href="#" class="solucoes__botao">Saiba Mais</a>
+            </div>
+            <div class="solucoes__automacaoIOT card">
+                <img class="solucoes__imagem" src="./imagens/AutomacaoIOT.svg" alt="Serviços de Automação">
+                <h3 class="solucoes__subtitulo">Automação e IOT</h3>
+                <div class="solucoes__containerTexto">
+                    <p class="solucoes__texto">Serviços de conexão e automação de residências</p>
+                </div>
+                <a href="#" class="solucoes__botao">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+    <section class="about ">
+        <h2 class="about__titulo">Por que escolher a SolveIT?</h2>
+        <div class="about__conteudo">
+            <div class="about__containerTexto">
+                <p class="about__texto">Somos uma empresa de tecnologia que chegou para revolucionar o mercado,
+                    oferecendo
+                    serviços completos que abrangem desde hardware até software. Com uma equipe altamente qualificada e
+                    comprometida, a SolveIT se dedica a fornecer soluções inovadoras
+                    e personalizadas para atender às necessidades de seus clientes, garantindo excelência e satisfação.
+                </p>
+            </div>
+            <div class="about__containerImagem">
+                <img src="./imagens/cadeado.svg" alt="Cadeado de Segurança">
+            </div>
+        </div>
+
+    </section>
+    <section class="orcamento">
+        <h2 class="orcamento__titulo">Faça seu orçamento</h2>
+        <div class="orcamento__conteudo">
+            <ul class="orcamento__lista">
+                <a class="orcamento__listaLink" href="#">
+                    <img class="orcamento__listaIcone" src="./icones/CriacaoSite.svg" alt="Icone Página Web">
+                    <p class="orcamento__listaTexto">Criação de Site</p>
+                </a>
+                <a class="orcamento__listaLink" href="#">
+                    <img class="orcamento__listaIcone" src="./icones/Computador.svg" alt="Icone de computador">
+                    <p class="orcamento__listaTexto">Software e Hardware</p>
+                </a>
+                <a class="orcamento__listaLink" href="#">
+                    <img class="orcamento__listaIcone" src="./icones/Robozinho.svg" alt="Icone de Robo">
+                    <p class="orcamento__listaTexto">Automacao e IOT</p>
+                </a>
+            </ul>
+            <div class="orcamento__imagem">
+                
+                <img src="./imagens/MulherOrcamento.svg"
+                srcset="./imagens/MulherOrcamento.svg 707w, ./imagens/MulherOrcamentoTelasGrandes.svg 1131w"
+                sizes="(max-width: 1023px) 0px, (max-width: 1727px) 707px, (min-width: 1728px) 1053px"
+                alt="Mulher apontando para os botões de orçamento">
+            </div>
+        </div>
+
+    </section>
+    <footer class="rodape">
+        <img class="rodape__imagem" src="./imagens/Logo com escrita sem fundo - branco.svg"
+            alt="Logo branca SolveIT Empresa de Soluções Técnologicas">
+        <div class="rodape__container">
+            <ul class="rodape__lista">
+                <li class="rodape__listaItem">
+                    <h2 class="rodape__titulo">Empresa</h2>
+                </li>
+                <li class="rodape__listaItem">
+                    <p class="rodape__listaTexto">SolveIT</p>
+                </li>
+                <li class="rodape__listaItem">
+                    <p class="rodape__listaTexto">CNPJ: 0000000000</p>
+                </li>
+                <li class="rodape__listaItem">
+                    <p class="rodape__listaTexto">Barra do Bugres-MT</p>
+                </li>
+            </ul>
+            <ul class="rodape__lista">
+                <li class="rodape__listaItem">
+                    <h2 class="rodape__titulo">Soluções</h2>
+                </li>
+                <li class="rodape__listaItem"><a class="rodape__listaLink" href="#">Criação de Sites</a></li>
+                <li class="rodape__listaItem"><a class="rodape__listaLink" href="#">Hardware e Software</a></li>
+                <li class="rodape__listaItem"><a class="rodape__listaLink" href="#">Automação e IOT</a></li>
+
+            </ul>
+            <ul class="rodape__lista">
+                <li class="rodape__listaItem">
+                    <h2 class="rodape__titulo">Fale Conosco</h2>
+                </li>
+                <li class="rodape__listaItem"><a class="rodape__listaLink" href="#">Suporte</a></li>
+                <li class="rodape__listaItem"><a class="rodape__listaLink" href="#">WhatsApp</a></li>
+                <li class="rodape__listaItem"><a class="rodape__listaLink" href="#">Telefone</a></li>
+                <li class="rodape__listaItem"><a class="rodape__listaLink" href="#">E-mail</a></li>
+
+            </ul>
+        </div>
+        <div class="rodape__copy">
+            <hr class="rodape__divisao">
+            <p>&copy;SolveIT</p>
+            <p>2024</p>
+        </div>
+
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Seleciona o item do menu que contém o dropdown
+            const dropdownLink = document.querySelector('.dropdown');
+            const dropdownMenu = document.querySelector('.containerTelasMaiores__itemSolucoes');
+            const dropdownImagem = document.querySelector('.li-dropdown')
+
+            // Adiciona um ouvinte de evento para o clique no item do menu
+            dropdownLink.addEventListener('click', function (event) {
+                event.preventDefault(); // Previne o comportamento padrão do link
+
+                // Alterna a classe 'show' para exibir ou ocultar o menu
+                dropdownMenu.classList.toggle('show');
+                dropdownImagem.style.backgroundImage = "url(../icones/SetaParaBaixo.svg)";
+                // verifica se o menu esta fechado para modificar o icone de seta
+                if (dropdownMenu.classList.contains('show')) {
+                    dropdownImagem.style.backgroundImage = "url(../icones/SetaParaBaixo.svg)"; // Seta para baixo quando aberto
+                } else {
+                    dropdownImagem.style.backgroundImage = "url(../icones/SetaParaCima.svg)"; // Seta para cima quando fechado
+                }
+            });
+
+            // Fecha o dropdown se clicar fora
+            document.addEventListener('click', function (e) {
+                if (!dropdownLink.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove('show'); // Fecha o menu se clicar fora
+                    dropdownImagem.style.backgroundImage = "url(../icones/SetaParaCima.svg)";
+                }
+            });
+        });
+
+
+
+
+        // Seleciona o checkbox do menu hamburguer e o cabecalho
+        const menuCheckbox = document.querySelector("#menu");
+        const cabecalho = document.querySelector(".cabecalho");
+
+
+
+        // Adiciona um evento de escuta ao checkbox do menu
+        menuCheckbox.addEventListener("change", function () {
+            if (menuCheckbox.checked) {
+                // Se o menu estiver aberto (checkbox marcado), remove a imagem de fundo
+                cabecalho.style.backgroundImage = "none";
+                cabecalho.style.backgroundColor = "#092B40"; // Altera a cor de fundo, se necessário
+            } else {
+                // Se o menu estiver fechado (checkbox desmarcado), restaura a imagem de fundo
+                cabecalho.style.backgroundImage = "url(../imagens/ComputadorMenuMobile.svg)";
+                cabecalho.style.backgroundColor = ""; // Restaura a cor original, se necessário
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
