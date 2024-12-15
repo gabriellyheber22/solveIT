@@ -223,3 +223,10 @@
    
 
 }
+@media screen and (min-width: 1728px){
+    .cabecalho{
+       gap: 0 2em;
+       justify-content:center;
+    }
+   
+}
